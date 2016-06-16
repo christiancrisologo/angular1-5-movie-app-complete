@@ -1,0 +1,42 @@
+<div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="details">
+                        <h1  class="txt-header" >{{vm.data.title}}</h1>
+                        <hr class="intro-divider">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <span> Length: {{vm.data.length}} </span> |                             
+                                Rating:  <star-component rating="vm.data.rating">
+                                    <span class="glyphicon glyphicon-star" ></span>
+                                </star-component>
+                                
+                                <div> 
+                                    <ul>
+                                        <li><a ng-link="['Overview']">Overview</a></li>
+                                        <li><a  ng-link="['Cast']">Cast</a></li>
+                                        <li><a  ng-link="['Director']">Director</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6"> 
+                                <b>Synopsys:</b>
+                                <p>{{vm.data.description}}</p>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row">
+                            <ng-outlet></ng-outlet>
+                        </div>
+                         <a ng-link="['List']" class="btn btn-default btn-lg">Back to Movie List </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</div>

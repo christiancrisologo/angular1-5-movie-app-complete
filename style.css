@@ -1,0 +1,34 @@
+.view-container{
+    margin-top:1.7em;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: midnightblue;
+     background-size: cover;
+    background-color: #fff;
+}
+.txt-header{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    font-size:5em;
+}
+.details h4{
+    color: black;    
+}
+.details p{
+    color: darkslateblue;
+}
+.details{
+    text-align: left;
+}
+accordion .ng-enter{
+    animation:bounce 0.5s;
+}
+accordion .ng-leave{
+    animation: fadeOut 0.5s;
+}
+.ng-cloak{
+    display:none;
+}

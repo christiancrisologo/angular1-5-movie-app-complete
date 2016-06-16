@@ -1,0 +1,8 @@
+bower_components/
+<<<<<<< HEAD
+m/
+*.logs
+=======
+*.logs
+*.log
+>>>>>>> 055536e16760b517f2cbba2733a278b012de90a3

@@ -1,0 +1,41 @@
+<h1>Movie List</h1>
+
+<div class="row">
+
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <th>lenght</th>
+            <th>Rating</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="movie in vm.movies">
+            <td> <a ng-link="['Details',{id:movie.id},'Overview']">{{movie.title}}</a></td>
+            <td>{{movie.length}}</td>
+            <td>
+                <star-component rating="movie.rating" max="5" set-rating="vm.setRating(movie,star)">
+                </star-component>
+            </td>
+            <td>
+                <rating-component data="movie" rating="movie.rating"></rating-component>
+                <button ng-click="vm.goTo(movie.id)" class="btn btn-default">
+                  <span class="glyphicon glyphicon-zoom-in"></span>
+              </button>
+            </td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <accordion>
+        <accordion-panel heading="Panel 1">
+            This is Panel 1
+        </accordion-panel>
+        <accordion-panel heading="Panel 2">
+            This is Panel 2
+        </accordion-panel>
+    </accordion>
+
+
+
+</div>
